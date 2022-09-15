@@ -1,6 +1,7 @@
 # importing libriraries
 import pandas as pd
 import numpy as np
+np.random.BitGenerator = np.random.bit_generator.BitGenerator
 import streamlit as st
 from PIL import Image
 import sklearn
