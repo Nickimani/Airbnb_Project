@@ -1,0 +1,5 @@
+pandas==1.4.2
+numpy==1.18.5
+streamlit==1.12.2
+PIL==7.2.0
+scikit-learn==0.23.2
