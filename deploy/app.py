@@ -16,7 +16,7 @@ st.write("""
 Airbnb was born in 2007 when two Hosts welcomed three guests to their San Francisco home, and has since grown to over 4 million Hosts who have welcomed more than 1 billion guest arrivals in almost every country across the globe. Every day, Hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.
 """)
 
-image1 = Image.open('Tswalu_Tarkuni.jpg')
+image1 = Image.open('/Airbnb_Project/deploy/Tswalu_Tarkuni.jpg')
 st.image(image1, width=650)
 
 # load pickle files
@@ -73,5 +73,5 @@ st.dataframe(final_recommender(user_preference))
 
 # Goodluck message
 st.markdown('**_Welcome to the Rainbow Nation_!!!** Enjoy your stay.')
-image2 = Image.open('SA_flag.jpg')
+image2 = Image.open('Airbnb_Project/deploy/SA_flag.jpg')
 st.image(image2)
