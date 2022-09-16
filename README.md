@@ -10,6 +10,6 @@ Airbnb is an online marketplace that connects people who want to rent out their 
 
 
 # **Data Understanding**
-Data was obtained <a href = "http://insideairbnb.com/get-the-data/>Inside Airbnb</a>. With 
+Data was obtained <a href = "http://insideairbnb.com/get-the-data/">Inside Airbnb</a>. With 
 
 ## **Exploratory Data Analysis**
