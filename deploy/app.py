@@ -97,7 +97,7 @@ def final_recommender(question, df):
     
     # Pick out the top 5
     #return the top 5
-    top_5 = df[['name', 'listing_url', 'price', 'cities']].tail(5)
+    top_5 = df[['name', 'listing_url', 'price']].tail(5)
     return top_5
 
 
