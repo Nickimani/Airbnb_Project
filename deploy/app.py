@@ -5,6 +5,7 @@ import streamlit as st
 from PIL import Image
 import sklearn
 import pickle
+from streamlit import session_state as session
 
 #sklearn
 from sklearn.metrics.pairwise import linear_kernel
@@ -28,6 +29,12 @@ listings_df_copy = pd.read_pickle('listings_cleaned_copy.pkl')
 
 # vectorizer
 # tfidf_rec = pickle.load(open('tfidf_vectorizer.pkl', 'rb'))
+
+#Define Amenities
+top_amenities = ['Wifi','Parking','Kitchen','Fridge','Microwave','Hair Dryer','TV','Pool','Workspace',
+                'Hot Tub','Baby Crib','Dishwasher','Washing Machine','Fire Extinguisher','Smoke Alarm']
+session.options = st.multiselect(label="Select Amenities", options=top_amenities)
+amenities_string = (" ".join(session.options)).lower()
 
 # Obtain input from the user
 st.write('Below type in preferences for your ideal listing. **_GO WILD!!!_**')
@@ -100,7 +107,7 @@ def final_recommender(question, df):
     top_5 = df[['name', 'listing_url', 'price']].tail(5)
     return top_5
 
-
+user_input = user_input +' '+ amenities_string
 
 st.dataframe(final_recommender(user_input, updated_df))
 
