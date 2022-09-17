@@ -6,6 +6,7 @@ from PIL import Image
 import sklearn
 import pickle
 from streamlit import session_state as session
+from IPython.display import HTML
 
 #sklearn
 from sklearn.metrics.pairwise import linear_kernel
@@ -102,14 +103,14 @@ def final_recommender(question, df):
     # Reorder the reference dataframe
     df = df.loc[nums]
     
-    # Pick out the top 5
-    #return the top 5
-    top_5 = df[['name', 'listing_url', 'price']].tail(5)
-    return top_5
+    # Pick out the top 10
+    #return the top 10
+    top_10 = df[['name', 'listing_url', 'price']].tail(10)
+    return HTML(top_10.to_html(render_links= True, escape= False))
 
 user_input = user_input +' '+ amenities_string
 
-st.dataframe(final_recommender(user_input, updated_df))
+st.write(final_recommender(user_input, updated_df))
 
 # map
 mapping = updated_df[['latitude', 'longitude']]
