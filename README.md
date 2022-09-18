@@ -33,3 +33,12 @@ Hosts with higher ratings have a response time of  within an our, have top rated
 The most frequently used double words include:
 
 ![](https://github.com/Rachael-Osoro/Git-Practice-2/blob/main/images/frequent_words.png)
+
+# Recommender
+Cosine similarity was calculated between listings and with Bigram TF-IDF vectorizer to create the recommender. 
+
+# Dependencies
+Google colab
+Python/ Anaconda
+
+
