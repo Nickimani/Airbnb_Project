@@ -28,5 +28,6 @@ Data was obtained <a href = "http://insideairbnb.com/get-the-data/">Inside Airbn
 Data was cleaned and preprocessed before developing a recommender system. Columns with null values of more than 40% were dropped, the rest were imputed with median, unknown, empty string.
 
 ## **Exploratory Data Analysis**
+Superhosts have a higher rating compared to non superhosts. Through data exploration the following insights were identified:
 The most frequently used double words include:
-![](https://colab.research.google.com/drive/18Y74z5ejiQvgr-Vd2QxBG5z6ePiNDMQD#scrollTo=EdiSgluY6At2)
+![](https://github.com/Rachael-Osoro/Git-Practice-2/blob/main/images/frequent_words.png)
