@@ -29,5 +29,7 @@ Data was cleaned and preprocessed before developing a recommender system. Column
 
 ## **Exploratory Data Analysis**
 Superhosts have a higher rating compared to non superhosts. Through data exploration the following insights were identified:
+Hosts with higher ratings have a response time of  within an our, have top rated amenities sucha as Wifi, Long Term Stay, Kitchen and its essentials, Hair Dryer, Dishwasher, Washer, Iron, Fire Extinguisher, Private Entrance, Free Parking, First Aid Kit
 The most frequently used double words include:
+
 ![](https://github.com/Rachael-Osoro/Git-Practice-2/blob/main/images/frequent_words.png)
