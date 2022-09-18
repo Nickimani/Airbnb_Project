@@ -20,7 +20,6 @@ The guests are a big part of the industry. In the airbnb listing sites, a user i
 ### Specific Objectives
 
 
-
 # **Data Understanding**
 ## Data
 Data was obtained <a href = "http://insideairbnb.com/get-the-data/">Inside Airbnb</a>. Data has two csv files listings which contains 18903 records and 74 features that give information about each listing in western cape and host information. The reviews file has 363,065 rows and 6 columns which provide guest information and their reviews of the airbnb they stayed at.
@@ -29,3 +28,5 @@ Data was obtained <a href = "http://insideairbnb.com/get-the-data/">Inside Airbn
 Data was cleaned and preprocessed before developing a recommender system. Columns with null values of more than 40% were dropped, the rest were imputed with median, unknown, empty string.
 
 ## **Exploratory Data Analysis**
+The most frequently used double words include:
+![](https://colab.research.google.com/drive/18Y74z5ejiQvgr-Vd2QxBG5z6ePiNDMQD#scrollTo=EdiSgluY6At2)
