@@ -1,7 +1,22 @@
 # **Airbnb Recommendation System**
+###
 ## *Aim of the project*
 To build a recommender for Airbnbs in Western Cape, South Africa based on guest preferences i.e location, number of bedrooms, amenities etc
 ![](https://th.bing.com/th/id/R.b7026f03d76d7999d642c57bd86051dd?rik=ayFeV62qBnDLFw&riu=http%3a%2f%2flatfusa.com%2fmedia%2fuploads%2f2020%2f12%2f10%2fairbnb-678x381.jpg&ehk=ygq%2b0vwi%2fzEoTYEvWfsJBqmk%2fkR5qvJOeZ21pB3tL2o%3d&risl=&pid=ImgRaw&r=0)
+
+## *Project Authors*
+<a href = "https://github.com/Nickimani">Nick Kimani</a>
+
+<a href = "https://github.com/Cherotich-Ngeno">Nelly Ng'eno</a>
+
+<a href = "https://github.com/Obatsa">Davis Obatsa</a>
+
+<a href = "https://github.com/Rachael-Osoro">Rachael Osoro</a>
+
+<a href = "https://github.com/wcharity">Charity Gakuru</a>
+
+<a href = "https://https://github.com/01Troy">Steve Troy</a>
+
 # Overview
 **What is Airbnb?**
 Airbnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in specific locales. The company was founded in 2007. <a href = "https://news.airbnb.com/about-us/">According to Airbnb</a>, the company has over 6 million active listings worldwide, in over 100k cities in more than 220 countries. It has revolutionized the hospitality industry, a paradigm shift from hotels and hostels to a wide variety of staying options. Travellers can choose from luxury homes, to boats to quirky spaces like these listed in this <a href = "https://www.dwell.com/article/unique-airbnb-fund-weirdest-home-rentals-e665f737">article</a>
@@ -18,6 +33,15 @@ The guests are a big part of the industry. In the airbnb listing sites, a user i
 2.) To build a content-based recommendation system for Airbnbs in Cape Town and Western Cape areas in South Africa. 
 
 ### Specific Objectives
+- To recommend the Airbnbs that are the best match what the user is looking for
+ 
+- To determine what are the factors unique to Airbnbs with above average ratings?
+ 
+- To find out what amenities are popular/attractive to users?
+ 
+- To use natural language preprocessing to evaluate if specific words are used in high rated Airbnbs reviews
+ 
+- To use the classification model to classify an Airbnb as a Superhost or not based on its features
 
 
 # **Data Understanding**
@@ -37,8 +61,40 @@ The most frequently used double words include:
 # Recommender
 Cosine similarity was calculated between listings and with Bigram TF-IDF vectorizer to create the recommender. 
 
+# Conclusions
+
+1.)While it is possible to be a superhost within the first year of hosting, the peak duration is from 6 years for most hosts.
+
+2.) The top rated listings had the following amenities: Wifi, allow for Long Term Stay, Kitchen and its essentials, Hair Dryer, Dishwasher, Washer, Iron, Fire Extinguisher, Private Entrance, Free Parking, First Aid Kit.
+
+3.) Most airbnbs are located within Cape Town. Newlands, Constantia and CapeTown fetch higher prices per listing. Mostly because its the capital of the area.
+
+4.) There is no much difference between superhosts and standard hosts based on their features e.g amenities, ratings, etc. The advantage is that superhosts are prioritized when searching for airbnbs which translate to more customers hence income.
+
+5) The recommender is matching the inputs with high accuracy.
+
+# Recommendations
+
+1.) Investing in Cape Town is a good idea, given its popularity, proximity to Robben Island (a historically significant island) and being top 3 in terms of price per night, the return on investment would be higher. 
+    
+- For high end clientelle, having  a listing in Newlands, which is at the foot of Table Mountain, Constantia for wine enthusiasts.
+
+2.) As much as there isn't a big difference in stats for super/standard hosts, being a superhost is advantageous for income.
+
+3.) The model can be deployed for in airbnb sites for user text searches.
+
+4.) Investigate airbnb reviews as some of them could have doctored reviews by their host or allies to the bnb.
+
+5.) Maintaining high levels of cleanliness and description accuracy are key in cutomer satisfaction and therefore attract higher ratings.
+
+## To deploy Recommender on streamlit
+```
+pip install -r requirements.txt
+streamlit run app.py
+```
 # Dependencies
 Google colab
 Python/ Anaconda
+
 
 
