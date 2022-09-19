@@ -28,9 +28,9 @@ Preferences, features and amenities might change with time,and someone has to be
 
 The guests are a big part of the industry. In the airbnb listing sites, a user is limited to just choosing from the amenities and features given. They aren’t given a choice to write a description of what they want. Our company is looking to optimize user experience by having  a recommendation system with the possibility to choose features already present and/or write a description of what they want.
  ### Main Objectives
-1.) To do an analysis of South africa Airbnb data comparing superhosts and standard hosts.
+- To build a content-based recommendation system for Airbnbs in Cape Town and Western Cape areas in South Africa
 
-2.) To build a content-based recommendation system for Airbnbs in Cape Town and Western Cape areas in South Africa. 
+- Build a classification model for Superhosts vs non-Superhosts
 
 ### Specific Objectives
 - To recommend the Airbnbs that are the best match what the user is looking for
