@@ -102,11 +102,11 @@ def final_recommender(question, df):
     nums = np.argsort(similarity[0])
     
     # Reorder the reference dataframe
-    df = df.loc[nums]
+    df = df.loc[list(reversed(nums))]
     
     # Pick out the top 10
     #return the top 10
-    top_10 = df[['name', 'listing_url', 'price']].tail(10)
+    top_10 = df[['name', 'listing_url', 'price']].head(10)
     return HTML(top_10.to_html(render_links= True, escape= False))
 
 user_input = user_input +' '+ amenities_string
