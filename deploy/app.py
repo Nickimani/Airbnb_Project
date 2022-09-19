@@ -4,6 +4,7 @@ import numpy as np
 import streamlit as st
 from PIL import Image
 import sklearn
+from sklearn.metrics.pairwise import cosine_similarity
 import pickle
 from streamlit import session_state as session
 from IPython.display import HTML
@@ -95,17 +96,17 @@ def final_recommender(question, df):
     inquiry = tfidf_rec.transform(np.array([question]))
 
     # Calculate cosine similarity of inquiry with the cv_matrix
-    similarity = linear_kernel(inquiry, tfidf_matrix)
+    similarity = cosine_similarity(inquiry, tfidf_matrix)
     
     # Obtain the index then sort, picking top 5
     nums = np.argsort(similarity[0])
     
     # Reorder the reference dataframe
-    df = df.loc[nums]
+    df = df.loc[list(reversed(nums))]
     
     # Pick out the top 10
     #return the top 10
-    top_10 = df[['name', 'listing_url', 'price']].tail(10)
+    top_10 = df[['name', 'listing_url', 'price']].head(10)
     return HTML(top_10.to_html(render_links= True, escape= False))
 
 user_input = user_input +' '+ amenities_string
