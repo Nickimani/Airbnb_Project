@@ -71,7 +71,7 @@ Cosine similarity was calculated between listings and with Bigram TF-IDF vectori
 
 4.) There is no much difference between superhosts and standard hosts based on their features e.g amenities, ratings, etc. The advantage is that superhosts are prioritized when searching for airbnbs which translate to more customers hence income.
 
-5) The recommender is matching the inputs with high accuracy.
+5.) The recommender is matching the inputs with high accuracy.
 
 # Recommendations
 
