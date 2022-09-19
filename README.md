@@ -92,6 +92,8 @@ Cosine similarity was calculated between listings and with Bigram TF-IDF vectori
 pip install -r requirements.txt
 streamlit run app.py
 ```
+<a href = "https://obatsa-airbnb-project-deployapp-s17c41.streamlitapp.com/">Here</a> is a look on what to expect once you deploy.
+
 # Dependencies
 Google colab
 Python/ Anaconda
